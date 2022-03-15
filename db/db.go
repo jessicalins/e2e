@@ -43,7 +43,7 @@ const AccessPortName = "http"
 
 // NewMinio returns minio server, used as a local replacement for S3.
 func NewMinio(env e2e.Environment, name, bktName string, opts ...Option) e2e.InstrumentedRunnable {
-	o := options{image: "minio/minio:RELEASE.2021-07-27T02-40-15Z"}
+	o := options{image: "minio/minio:RELEASE.2022-03-14T18-25-24Z"}
 	for _, opt := range opts {
 		opt(&o)
 	}
